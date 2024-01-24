@@ -1,7 +1,9 @@
+import Nav from "./components/Nav";
+
 function App() {
   return (
-    <div className="text-4xl">
-      <h1>Hello Tailwind friends</h1>
+    <div className="p-10 xl:px-24">
+      <Nav />
     </div>
   );
 }
