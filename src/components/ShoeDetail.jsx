@@ -3,6 +3,8 @@
 import { BiDollar } from "react-icons/bi";
 
 import nike1 from "../assets/n1-min.png";
+import Select from "./Select";
+import { QTY, SIZES } from "../constant";
 
 const ShoeDetail = () => {
   return (
@@ -21,9 +23,13 @@ const ShoeDetail = () => {
             "The Nike Air Max 270 is a lifestyle shoe that's sure to trun heads with its vibrant color gradient."
           }
         </div>
+        <div className="flex space-x-6">
         {/* <div className="text-3xl font-extrabold md:text-6xl">100 $</div> */}
-        <div className="flex items-center text-3xl font-extrabold md:text-6xl">
-          100 <BiDollar />
+          <div className="flex items-center text-3xl font-extrabold md:text-6xl">
+            100 <BiDollar />
+          </div>
+          <Select title={"Qty"} options={QTY} />
+          <Select title={"SIZE"} options={SIZES} />
         </div>
 
         <div className="space-x-10">
