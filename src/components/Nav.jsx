@@ -10,7 +10,7 @@ const Nav = () => {
   const [isMobileMenuShow, setIsMobileMenuShow] = useState(false);
 
   return (
-    <nav className="relative relative z-10 flex flex-wrap items-center justify-between">
+    <nav className="relative z-10 flex flex-wrap items-center justify-between">
       <a href="#">
         <NikeLogo className="h-20 w-20" />
       </a>
@@ -27,7 +27,7 @@ const Nav = () => {
       <div
         className={`${!isMobileMenuShow && "hidden"} w-full lg:block lg:w-auto`}
       >
-        <ul className="flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent select-none">
+        <ul className="flex select-none flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 text-lg lg:flex-row lg:space-x-8 lg:border-none lg:bg-transparent">
           {ROUTES.map((route, i) => {
             return (
               <li
