@@ -1,7 +1,7 @@
 const Card = ({ item }) => {
   return (
     <div
-      className={`${item.className} relative max-w-xl transform cursor-pointer transition hover:scale-105`}
+      className={`${item.className} relative max-w-xl cursor-pointer transition hover:scale-105`}
     >
       <div className="p-8">
         <div className="text-2xl font-bold">{item.title}</div>
@@ -9,7 +9,7 @@ const Card = ({ item }) => {
           SHOP NOW +
         </div>
       </div>
-      <img className="absolute left-[40%] top-5 h-40 w-56" src={item.src} />
+      <img className="absolute left-[50%] top-5 h-40" src={item.src} />
     </div>
   );
 };
