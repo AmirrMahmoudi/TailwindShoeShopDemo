@@ -15,4 +15,11 @@
   .btn-press-anim {
     @apply transition active:scale-75;
   }
+  .showCart::-webkit-scrollbar {
+    display: none;
+  }
+
+  .showCart::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }

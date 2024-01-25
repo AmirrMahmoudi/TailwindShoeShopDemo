@@ -1,4 +1,4 @@
-// import { BiDollar } from "react-icons/bi";
+import { BiDollar } from "react-icons/bi";
 
 // import { BiDollar } from "react-icons/bi";
 
@@ -24,10 +24,10 @@ const ShoeDetail = () => {
           }
         </div>
         <div className="flex space-x-6">
-          <div className="text-3xl font-extrabold md:text-6xl">100 $</div>
-          {/* <div className="flex items-center text-3xl font-extrabold md:text-6xl">
+          {/* <div className="text-3xl font-extrabold md:text-6xl">100 $</div> */}
+          <div className="flex items-center text-3xl font-extrabold md:text-6xl">
             100 <BiDollar />
-          </div> */}
+          </div>
           <Select title={"Qty"} options={QTY} />
           <Select title={"SIZE"} options={SIZES} />
         </div>
