@@ -22,15 +22,15 @@ const CartItem = ({ item }) => {
           </span>
         </div>
       </div>
-      <div className="flex justify-evenly">
+      <div className="flex justify-between">
         <div className="flex space-x-6">
           <div>
             <div className="font-bold">SIZE</div>
-            <Select title="" options={SIZES} />
+            <Select title="" options={SIZES} className={"w-16 p-1"} />
           </div>
           <div>
             <div className="font-bold">QTY</div>
-            <Select title="" options={QTY} />
+            <Select title="" options={QTY} className={"w-16 p-1"} />
           </div>
         </div>
         <button>
