@@ -4,7 +4,7 @@ const NewArrivalsSection = ({ items }) => {
   return (
     <div className="mt-20">
       <div className="flex-center">
-        <div className="bg-[url('./assets/lines.png')] bg-center text-4xl font-extrabold uppercase">
+        <div className="bg-[url('./assets/lines.png')] bg-center text-4xl font-extrabold uppercase dark:text-white">
           new arrivals
         </div>
       </div>
