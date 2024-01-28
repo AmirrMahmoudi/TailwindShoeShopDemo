@@ -3,9 +3,9 @@ import { CiTrash } from "react-icons/ci";
 
 import Select from "./Select";
 import { SIZES, QTY } from "../constant";
-const CartItem = ({ item: { product, qty, size } }) => {
+const CartItem = ({ item: { product, qty, size }, onClickTrash }) => {
   return (
-    <div className="dark:hover:bg-night-50 cursor-pointer space-y-2 bg-gray-50 p-2 hover:bg-[#DAFFA2] dark:bg-transparent">
+    <div className="cursor-pointer space-y-2 bg-gray-50 p-2 hover:bg-[#DAFFA2] dark:bg-transparent dark:hover:bg-night-50">
       <div className="flex space-x-2">
         {/* Image */}
         <img className="h-24" src={product.src} />
@@ -43,7 +43,10 @@ const CartItem = ({ item: { product, qty, size } }) => {
             />
           </div>
         </div>
-        <button>
+        <button
+          className="btn-press-anim"
+          onClick={() => onClickTrash(product.id)}
+        >
           <CiTrash size={25} className="text-black dark:text-white" />
         </button>
       </div>
