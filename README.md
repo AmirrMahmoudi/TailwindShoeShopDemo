@@ -1,4 +1,3 @@
-```markdown
 # TailwindShoeShopDemo
 
 ## Description
@@ -13,6 +12,7 @@ To install this project, follow these steps:
 git clone https://github.com/AmirrMahmoudi/TailwindShoeShopDemo.git
 cd TailwindShoeShopDemo
 npm install
+
 ```
 
 ## Usage
